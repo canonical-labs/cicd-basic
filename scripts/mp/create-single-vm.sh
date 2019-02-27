@@ -27,7 +27,7 @@ else
       --mem ${VM_MEM} \
       --disk ${VM_DISK} \
       --cpus ${VM_CPUS} \
-      --cloud-init ${CLOUD_INIT} \
+      --cloud-init "${CLOUD_INIT}" \
       ${VM_IMAGE}
   # Where "permanent data" will be stored
   info "MOUNTING HOST:${STORAGE_SRC} --> VM:${STORAGE_DST}"
